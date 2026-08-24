@@ -1,0 +1,635 @@
+/*=====================================================
+    SCHOOL MANAGEMENT PORTAL
+    LOGIN.CSS
+    PART 1
+======================================================*/
+
+/*==============================
+        GOOGLE FONT
+===============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/*==============================
+            RESET
+===============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#F8FAFC;
+
+    color:#0F172A;
+
+}
+
+
+/*==============================
+        ROOT VARIABLES
+===============================*/
+
+:root{
+
+    --primary:#0F172A;
+
+    --secondary:#2563EB;
+
+    --hover:#1D4ED8;
+
+    --white:#FFFFFF;
+
+    --text:#64748B;
+
+    --border:#E2E8F0;
+
+    --shadow:0 15px 35px rgba(0,0,0,.12);
+
+    --radius:12px;
+
+}
+
+
+/*==============================
+      LOGIN CONTAINER
+===============================*/
+
+.login-container{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+
+/*==============================
+        LEFT PANEL
+===============================*/
+
+.login-left{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+.login-left img{
+
+    width:140px;
+
+    margin-bottom:30px;
+
+}
+
+.login-left h1{
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+.login-left p{
+
+    font-size:18px;
+
+    max-width:500px;
+
+    line-height:1.8;
+
+}
+
+/*=====================================================
+    SCHOOL MANAGEMENT PORTAL
+    LOGIN.CSS
+    PART 2
+======================================================*/
+
+
+/*==============================
+        RIGHT PANEL
+===============================*/
+
+.login-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+    background:#F8FAFC;
+
+}
+
+
+/*==============================
+        LOGIN BOX
+===============================*/
+
+.login-box{
+
+    width:100%;
+
+    max-width:480px;
+
+    background:var(--white);
+
+    padding:45px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.login-box h2{
+
+    font-size:32px;
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    color:var(--text);
+
+    margin-bottom:30px;
+
+}
+
+
+/*==============================
+        MESSAGE BOX
+===============================*/
+
+#message{
+
+    display:none;
+
+    margin-bottom:20px;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+
+/*==============================
+        INPUT GROUP
+===============================*/
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+
+/*==============================
+        INPUT BOX
+===============================*/
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    background:#FFFFFF;
+
+}
+
+.input-box:focus-within{
+
+    border-color:var(--secondary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+.input-box i{
+
+    width:55px;
+
+    text-align:center;
+
+    color:var(--secondary);
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    padding:16px;
+
+    font-size:16px;
+
+    background:transparent;
+
+    color:var(--primary);
+
+}
+
+
+/*==============================
+    PASSWORD TOGGLE
+===============================*/
+
+#togglePassword{
+
+    width:55px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    color:var(--text);
+
+    transition:.3s;
+
+}
+
+#togglePassword:hover{
+
+    color:var(--secondary);
+
+}
+
+
+/*==============================
+      LOGIN OPTIONS
+===============================*/
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:25px 0;
+
+    font-size:15px;
+
+}
+
+.login-options label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+    color:var(--primary);
+
+}
+
+.login-options input{
+
+    cursor:pointer;
+
+}
+
+.login-options a{
+
+    color:var(--secondary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-options a:hover{
+
+    color:var(--hover);
+
+}
+
+/*=====================================================
+    SCHOOL MANAGEMENT PORTAL
+    LOGIN.CSS
+    PART 3
+======================================================*/
+
+
+/*==============================
+        LOGIN BUTTON
+===============================*/
+
+#loginBtn{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--secondary);
+
+    color:var(--white);
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+#loginBtn:hover{
+
+    background:var(--hover);
+
+}
+
+
+/*==============================
+      LOADING SPINNER
+===============================*/
+
+#loader{
+
+    display:none;
+
+}
+
+
+/*==============================
+      BACK HOME BUTTON
+===============================*/
+
+.back-home{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.back-home a{
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.back-home a:hover{
+
+    color:var(--secondary);
+
+}
+
+.back-home i{
+
+    margin-right:8px;
+
+}
+
+
+/*==============================
+        INPUT PLACEHOLDER
+===============================*/
+
+input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+textarea::placeholder{
+
+    color:#94A3B8;
+
+}
+
+
+/*==============================
+      INPUT AUTOFILL
+===============================*/
+
+input:-webkit-autofill{
+
+    -webkit-box-shadow:0 0 0px 1000px #FFFFFF inset;
+
+    -webkit-text-fill-color:#0F172A;
+
+}
+
+
+/*==============================
+        RESPONSIVE
+===============================*/
+
+@media(max-width:992px){
+
+.login-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.login-left{
+
+    padding:50px 30px;
+
+}
+
+.login-left img{
+
+    width:100px;
+
+}
+
+.login-left h1{
+
+    font-size:30px;
+
+}
+
+.login-left p{
+
+    font-size:16px;
+
+}
+
+.login-right{
+
+    padding:30px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.login-box{
+
+    padding:35px 25px;
+
+}
+
+.login-box h2{
+
+    font-size:28px;
+
+}
+
+.login-options{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+}
+
+
+@media(max-width:480px){
+
+.login-left{
+
+    padding:40px 20px;
+
+}
+
+.login-left img{
+
+    width:80px;
+
+}
+
+.login-left h1{
+
+    font-size:24px;
+
+}
+
+.login-left p{
+
+    font-size:15px;
+
+}
+
+.login-right{
+
+    padding:20px;
+
+}
+
+.login-box{
+
+    padding:25px 20px;
+
+}
+
+.login-box h2{
+
+    font-size:24px;
+
+}
+
+.input-box input{
+
+    font-size:15px;
+
+}
+
+#loginBtn{
+
+    font-size:16px;
+
+    padding:15px;
+
+}
+
+}
